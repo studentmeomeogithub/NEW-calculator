@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Calculator</title>
+    <link rel="stylesheet" href="index.css">
+</head>
+<body>
+  
+    <table>
+        <tr>
+            <th colspan="4"><input type="text" id="a"></th>
+        </tr>
+        <tr>
+            <th><input type="button" id="clear" value="C" onclick="clr()"></th>
+            <th><input type="button" id="operator" value="+" onclick="pick('+')"></th>
+        </tr>
+        
+        <tr>
+            <th><input type="button" value="1" id="number" onclick="pick(1)"></th>
+            <th><input type="button" value="2" id="number" onclick="pick(2)"></th>
+            <th><input type="button" value="3"id="number" onclick="pick(3)"></th>
+            <th><input type="button" value="4" id="number" onclick="pick(4)"></th>
+
+        </tr>
+        <tr>
+            <th><input type="button" value="5" id="number" onclick="pick(5)"></th>
+            <th><input type="button" value="6" id="number" onclick="pick(6)"></th>
+            <th><input type="button" value="7" id="number" onclick="pick(7)"></th>
+            <th><input type="button" value="8" id="number" onclick="pick(8)"></th>
+
+        </tr>
+        <tr>
+            <th><input type="button" value="9" id="number" onclick="pick(9)"></th>
+            <th><input type="button" value="*" id="operator" onclick="pick('*')"></th>
+            <th><input type="button" value="/" id="operator" onclick="pick('/')"></th>
+            <th><input type="button" value="=" id="equal" onclick="solve()"></th><br>
+        </tr>
+      
+    </table>
+    <script src="main.js"></script>
+    
+</body>
+</html>
